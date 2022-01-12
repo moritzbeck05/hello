@@ -1,0 +1,5 @@
+if [ "$SRC" -nt "$EXEC" ]
+then
+        echo "Rebuilding $EXEC...."
+        $CC -o $EXEC $SRC -lm
+fi
